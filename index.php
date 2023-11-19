@@ -16,6 +16,6 @@ function getFib($n)
     return $b;
 }
 
-$resultado = getFib(100000);
+$resultado = getFib(10000);
 
 echo $resultado;

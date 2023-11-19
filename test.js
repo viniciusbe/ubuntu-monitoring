@@ -3,13 +3,13 @@ import { sleep } from "k6";
 
 export const options = {
   stages: [
-    { duration: "20s", target: 50 },
-    { duration: "40s", target: 50 },
-    { duration: "20s", target: 0 },
+    { duration: "12s", target: 150 },
+    { duration: "56s", target: 150 },
+    { duration: "12s", target: 0 },
   ],
 };
 
 export default () => {
-  const urlRes = http.get("http://192.168.122.22/");
+  const urlRes = http.get("http://192.168.122.18/");
   sleep(1);
 };
